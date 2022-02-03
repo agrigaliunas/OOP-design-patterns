@@ -1,0 +1,26 @@
+package program;
+
+public class Pi {
+	private static Pi instanciaUnica;
+	public double valorPi;
+	
+	private Pi(double valorPi) {
+		this.valorPi = valorPi;
+	}
+	
+	public static Pi getInstance() {
+		if(instanciaUnica == null) {
+			instanciaUnica = new Pi();
+			
+		}
+		return instanciaUnica;
+	}
+	
+	public void setValorPi() {
+		valorPi = Math.PI;
+	}
+	
+	public double getValorPi() {
+		return valorPi;
+	}
+}

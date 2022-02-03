@@ -1,0 +1,23 @@
+package program;
+
+public class Pi {
+	private static Pi instanciaUnica;
+	public Double valorPi;
+	private Pi() {}
+	
+	private Pi getInstance() {
+		if(instanciaUnica == null) {
+			instanciaUnica = new Pi();
+			
+		}
+		return instanciaUnica;
+	}
+	
+	private void setValorPi() {
+		valorPi = Math.Pi();
+	}
+	
+	public Double getValorPi() {
+		
+	}
+}

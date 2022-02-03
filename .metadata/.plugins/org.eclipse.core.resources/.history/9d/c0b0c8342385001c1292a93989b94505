@@ -1,0 +1,9 @@
+package domain;
+import java.util.Random;
+
+public abstract class FigurasRandomFactory {
+	
+	public Figura crearFiguraRandom() {
+		
+	}
+}

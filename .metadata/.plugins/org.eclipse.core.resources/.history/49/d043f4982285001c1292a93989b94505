@@ -1,0 +1,14 @@
+package domain;
+
+public class Rectangulo extends Figura {
+	private double alto;
+	private double ancho;
+	
+	public Rectangulo(double area, double alto, double ancho) {
+		super(area);
+		this.alto = alto;
+		this.ancho = ancho;
+	}
+	
+	
+}

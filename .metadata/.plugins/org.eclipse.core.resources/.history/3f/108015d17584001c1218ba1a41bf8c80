@@ -1,0 +1,12 @@
+package program;
+
+public class Pi {
+	private static Pi instanciaPi = new Pi();
+	
+	private Pi() {}
+	
+	public static void getInstance() {
+		return instanciaPi;
+	}
+	
+}
