@@ -19,14 +19,8 @@ public class Carpeta implements Unidad{
 	}
 	
 	@Override
-	public double tamanoTotal() { // usamos recursividad en la funcion
-		double tamanoCalculado = 0;
-		
-		for(Unidad unidad: listaUnidadesEnCarpeta) {
-			tamanoCalculado += unidad.tamanoTotal();
-		}
-		
-		return tamanoCalculado;
+	public double tamanoTotal() {
+		return 0;
 	}
 
 }

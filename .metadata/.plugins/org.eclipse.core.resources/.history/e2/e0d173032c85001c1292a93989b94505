@@ -9,7 +9,8 @@ public class Archivo implements Unidad{
 	
 	@Override
 	public double tamanoTotal() {
-		return this.tamano;
+		double tamanoCalculado = 0;
+		return 0;
 	}
 
 	

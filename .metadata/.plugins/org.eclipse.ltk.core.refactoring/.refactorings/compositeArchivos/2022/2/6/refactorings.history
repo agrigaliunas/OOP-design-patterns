@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;domain.Pc&apos; to &apos;Unidad&apos;&#x0A;- Original project: &apos;compositeArchivos&apos;&#x0A;- Original element: &apos;domain.Pc&apos;&#x0A;- Renamed element: &apos;domain.Unidad&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Pc&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;domain{Pc.java[Pc" matchStrategy="1" name="Unidad" qualified="false" references="true" similarDeclarations="false" stamp="1643917716572" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+package domain;
+
+public class Archivo implements Unidad{
+
+	@Override
+	public double tamanoTotal() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+}

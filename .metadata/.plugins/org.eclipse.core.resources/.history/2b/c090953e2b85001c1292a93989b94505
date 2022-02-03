@@ -1,0 +1,25 @@
+package domain;
+
+import java.util.List;
+
+public class Carpeta implements Unidad{
+	public List<Unidad> listaUnidadesEnCarpeta;
+
+	public Carpeta() {
+		this.listaUnidadesEnCarpeta = new ArrayList<>();
+	}
+	
+	public void agregarUnidad() {
+		
+	}
+
+	public void quitarUnidad() {
+		
+	}
+	
+	@Override
+	public double tamanoTotal() {
+		return 0;
+	}
+
+}

@@ -1,0 +1,19 @@
+package domain;
+
+public class Carpeta implements Unidad{
+	public List<Unidad> listaUnidadesEnCarpeta();
+
+	public void agregarUnidad() {
+		
+	}
+
+	public void quitarUnidad() {
+		
+	}
+	
+	@Override
+	public double tamanoTotal() {
+		return 0;
+	}
+
+}
