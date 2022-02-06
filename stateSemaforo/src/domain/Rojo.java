@@ -8,7 +8,7 @@ public class Rojo extends Color{
 
 	@Override
 	public void cambiarColor() {
-		semaforo.setColor(new Amarillo(semaforo));
+		semaforo.setColor(new AmarilloAbajo(semaforo));
 	}
 
 	@Override
