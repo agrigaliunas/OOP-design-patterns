@@ -6,37 +6,50 @@ public class CuentaBancaria{
     private boolean estaCerrada = false;
 
     public CuentaBancaria(){
-        this.estadoDeLaCuenta = new EstadoCuentaNormal();
+        this.estadoDeLaCuenta = new EstadoCuentaNormal(this);
     }
 
 
     public void depositar(double monto){
-        this.saldo+=monto;
+        this.estadoDeLaCuenta.depositar(monto);
         this.actualizarEstado();
     }
 
     public void retirar(double monto){
-        this.saldo-=monto;
+        this.estadoDeLaCuenta.retirar(monto);
         this.actualizarEstado();
     }
 
     public void actualizarEstado(){
         if(!estaCerrada){
             if(this.saldo >= 0){
-                this.estadoDeLaCuenta = new EstadoCuentaNormal();
+                this.estadoDeLaCuenta = new EstadoCuentaNormal(this);
             }
             else{
-                this.estadoDeLaCuenta = new EstadoCuentaEnRojo();
+                this.estadoDeLaCuenta = new EstadoCuentaEnRojo(this);
             }
         }
     }
 
     public double obtenerSaldo(){
-        return this.saldo;
+        return saldo;
+    }
+
+    public void aumentarSaldo(double monto){
+        this.saldo += monto;
+    }
+
+    public void disminuirSaldo(double monto){
+        this.saldo -= monto;
     }
 
     public void cerrarCuenta(){
-        this.estadoDeLaCuenta = new EstadoCuentaCerrada();
+        this.estadoDeLaCuenta = new EstadoCuentaCerrada(this);
         estaCerrada = true;
+    }
+
+    @Override
+    public String toString(){
+        return "Saldo: "+saldo+", Estado: "+estadoDeLaCuenta;
     }
 }
