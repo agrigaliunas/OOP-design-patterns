@@ -1,8 +1,0 @@
-package domain;
-
-public class CirculoRandomFactory extends FigurasRandomFactory{
-	public Circulo crearFiguraRandom() {
-		double radioRandom = generadorNumeroRandom.nextDouble();
-		return new Circulo(radioRandom);
-	}
-}

@@ -1,9 +1,0 @@
-package domain;
-
-public class RectanguloRandomFactory extends FigurasRandomFactory{
-	public Circulo crearFiguraRandom() {
-		double altoRandom = generadorNumeroRandom.nextDouble();
-		double anchoRandom = generadorNumeroRandom.nextDouble();
-		return new Rectangulo(altoRandom, anchoRandom);
-	}
-}

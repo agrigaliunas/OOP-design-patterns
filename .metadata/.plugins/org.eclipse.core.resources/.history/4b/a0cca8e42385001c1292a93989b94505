@@ -1,7 +1,0 @@
-package domain;
-
-public class TrianguloRandomFactory extends FiguraRandomFactory{
-	public Triangulo generarFiguraRandom() {
-		double alturaRandom = generadorNumeroRandom.nextDouble();
-	}
-}

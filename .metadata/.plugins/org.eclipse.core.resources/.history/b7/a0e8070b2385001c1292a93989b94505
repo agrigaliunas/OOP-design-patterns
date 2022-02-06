@@ -1,8 +1,0 @@
-package domain;
-
-public class FigurasRandomFactory {
-	
-	public abstract Figura crearFiguraRandom() {
-		
-	}
-}

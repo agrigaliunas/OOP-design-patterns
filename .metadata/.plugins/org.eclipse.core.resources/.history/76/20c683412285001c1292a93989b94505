@@ -1,5 +1,0 @@
-package domain;
-
-public class Circulo extends Figura {
-
-}

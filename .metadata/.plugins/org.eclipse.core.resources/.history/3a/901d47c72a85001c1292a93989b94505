@@ -1,8 +1,0 @@
-package domain;
-
-public interface Unidad {
-	public abstract double tamanoTotal();
-	public abstract void agregarUnidad();
-	public abstract void quitarUnidad();
-	public abstract void Unidad getHijos();
-}
