@@ -1,5 +1,6 @@
 package domain;
 
-public class JefeDeSeccion {
+public class JefeDeSeccion implements Empleado{
+
 
 }
